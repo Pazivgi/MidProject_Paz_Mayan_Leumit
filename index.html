@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>תכנות 3 - JavaScript</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap -->
+    <!-- <script src="js/bootstrap.bundle.js"></script>--->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+    <body>
+        <nav>
+            <button id="nav-button" class="btn-mobile hide" onclick="toggleNav()"><img src="./Images/burger-bar.png"
+                    alt="ניווט"></button>
+            <ul id="main-nav" class="flex-container-nav hide-mobile">
+                <li><a href="./index.html">דף הבית</a></li>
+            </ul>
+    </nav>
+    <header>
+        <h1>10 היבטים להכשרה</h1>
+       
+    </header>
+       <div class="container">
+        <div class="mb-3">
+            <label for="textCategoryInput" class="form-label"></label>
+            <input type="text" class="form-control" id="textCategoryInput" placeholder="חיפוש מילה או קטגוריה">
+            <button onclick="searchSkills(jsonData.skills)" id="searchBTN" ><img src="./Images/search.png"></button>
+        </div>
+        <div id="skillsContainer">
+        </div>
+    </div>
+    <h1 id="forum" >פורום</h1>
+    <div class="modal fade" id="modalContent">
+        <div class="modal-dialog modal-dialog-centered mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">מידע נוסף</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="modalContent"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">סגירה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form onsubmit="submitComment(); return false;">
+        <input type="text" class="textInput" id="username" placeholder="הזנת שם" required autocomplete="off">
+        <textarea  class="textInput" id="comment" placeholder="הזנת תגובה" required autocomplete="off"></textarea>
+        <button id="commentbtn" type="submit">הוספת תגובה</button>
+    </form>
+    <h3>תגובות</h3>
+    <div id="comments-section">
+    </div>
+       </div>
+    </body>
+</html>

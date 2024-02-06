@@ -1,0 +1,282 @@
+body {
+  background-color: #f0f0f0;
+}
+/* עיצוב צבע רקע לתפריט */
+nav{
+  background-color: black;
+}
+/* הגדרות עיצוב לקונטיינר */
+.container {
+  padding: 20px;
+  border-radius: 16px;
+  background-color: rgba(108, 100, 255, 0.067);
+  text-align: right;
+}
+
+/* תמונת רקע לכותרת */
+header{
+  background: url('../Images/6000388.jpg') center/cover;
+}
+/* עיצוב עבור כפתור חיפוש והמבורגר */
+button {
+  background: rgba(108, 100, 255);
+  border-radius: 16px;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-right: 0.5rem;
+  width: 95px;
+  border: none;
+}
+
+/* כפתור חיפוש - עיצוב */
+#searchBTN{
+  width: 35px;
+  border-radius: 32px;
+}
+
+/* עיצוב עבור שורת חיפוש */
+#textCategoryInput{
+  width: 10rem;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+/* תפריט ניווט עיצוב */
+#nav-button {
+  background: white;
+  width: 48px;
+  border: none;
+}
+
+/* עיצוב עבור תצוגת הכישורים ותוכן הכישורים */
+#skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: right;
+}
+
+#skillsContainer > div {
+  text-align: right;
+}
+
+#skillsContainer h2 {
+font-size: 18px;
+font-weight: 650;
+text-align: right;
+}
+
+
+#skillsContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  direction: rtl;
+  border: 2px solid #090808; 
+  padding: 15px;
+  border-radius: 24px;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-align: right;
+}
+
+#skillsContainer img {
+  height: 10rem;
+}
+
+#skillsContainer p {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+video, img, canvas{
+    max-width: 100%;
+}
+
+/* פופאפ מודאל - הצגת מידע מלא*/
+ .modal-header {
+  background-color: rgb(108 ,100, 255);
+  color: #fff;
+}  
+
+#modalContent .modal-body {
+  background-color: #fff;
+} 
+
+.modal-footer {
+  background-color: #f8f9fa;
+}
+
+.modal-footer button {
+  color: rgb(255, 255, 255);
+}
+
+.modal-dialog {
+  max-width: 500px; 
+  padding-top: 15%;
+  width: 50%;
+}  
+
+/* הגדרות עיצוב עבור חלק הפורום */
+/* עיצוב תיבות טקסט לפורום */
+.textInput{
+  width: 20rem;
+  display: flex;
+  border-radius: 8px;
+  border: none; 
+  margin-top: 5%;
+}
+/* עיצוב עבור תיבת טקסט - שם משתמש */
+#username {
+  padding: 8px;
+  margin-right: 18%;
+  display: flex;
+  width: 10rem;
+}
+
+/* עיצוב עבור תיבת טקסט - הוספת תגובה */
+#comment {
+  padding-right: 8px;
+  margin-right: 18%;
+  margin-top: 20px;
+  display: flex;
+  width: 50%;
+}
+
+/* עיצוב עבור טופס */
+form {
+  background-color:  rgba(108, 100, 255, 0.067);
+border-radius: 16px;
+}
+
+/* עיצוב עבור כפתור הוספת תגובה */
+#commentbtn{
+  padding: 8px;
+  margin-right: 18%;
+  margin-top: 20px;
+  display: flex;
+  width: 7.5rem;
+}
+
+/* עיצוב עבור אזור התגובות שנוספו */
+#comments-section {
+  padding-bottom: 3%;
+  padding-right: 1%;
+  margin-right: 18%;
+  background-color:  rgba(108, 100, 255, 0.067);
+}
+
+/* עיצוב עבור כותרות */
+h3 {
+  padding-right: 18%;
+  padding-top:3%;
+  font-weight: 700;
+}
+
+
+/* הגדרות כלליות - יופעלו במסכים קטנים מ-600 פיקסל ובמקרה שלא הוגדרה הגדרה נוספת למסכים ספציפיים */
+.flex-container-nav {
+  display: flex;
+  gap: 0px;
+  background-color: #000000;
+  padding: 5px;
+  flex-direction: column;
+  position: absolute;
+}
+
+.flex-container-nav.hide-mobile{
+  display: none;
+}
+
+/* הגדרות העיצוב של הפריטים בתפריט */
+li {
+  padding: 13px;
+}
+li a{
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+/* אלמנט הכי עליון ב-html שיגדיר לכל מה שאבחר ב-html */
+:root{
+  font-size: 14px;
+}
+
+ /* הגדרות עיצוב לכותרת הראשית - Header */
+h1{
+  padding:10px;
+  color:white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 3%;
+}
+
+/* הגדרת צבע שונה לכותרת */
+#forum{
+  color: black;
+}
+
+/* הסתרת כפתור התפריט במסך הגדול */
+.hide {
+  display: block;
+}
+
+/* יישור כפתור מידע נוסף */
+.item-info-btn{
+  margin-top: auto;
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+/* אלמנט הכי עליון ב-html שיגדיר לכל מה שאבחר ב-html */
+:root{
+  font-size: 14px;
+}
+/* שינוי גודל תיבת הטקסט של שם המשתמש */
+#username {
+  width: 20rem;
+}
+/* שינוי גודל תיבת הטקסט של התגובה */
+#comment {
+  width: 20%;
+}
+
+/* הגדרות התפריט במסך גדול */
+.flex-container-nav {
+  flex-direction: row; 
+  position: relative;
+  background-color:black;
+}
+
+/* הצגת כפתור התפריט במסך הגדול */
+.hide {
+  display: none;
+}
+/* הצגת התפריט כסגור במסך המובייל */
+.flex-container-nav.hide-mobile{
+  display: flex;
+}
+
+/* הגדרות לתוכן של חלון הפופ אפ */
+#modalContent .modal-dialog {
+  max-width: 25%;
+  margin: 1.5rem auto;
+  text-align: right;
+}
+
+/* עיצוב עבור שורת חיפוש */
+#textCategoryInput{
+  width: 20rem;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+}
+
